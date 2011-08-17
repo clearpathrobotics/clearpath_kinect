@@ -1,0 +1,24 @@
+<package>
+  <description brief="clearpath_tools">
+
+     clearpath_tools
+
+  </description>
+  <author>Sean Anderson</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/clearpath_tools</url>
+
+  <depend package="roscpp"/>
+  <depend package="pcl_ros"/>
+
+  <depend package="std_msgs"/>
+  <depend package="sensor_msgs"/>
+
+  <export>
+    <cpp cflags="-I${prefix}/src" lflags="-L${prefix}/lib -lros"/>
+  </export>
+
+</package>
+
+

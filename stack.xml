@@ -1,0 +1,10 @@
+<stack>
+  <description brief="clearpath_kinect">This stack contains general-purpose software
+  for working with Clearpath Robotics platforms equipped with a Kinect sensor.</description>
+  <author>Maintained by Sean Anderson</author>
+  <license></license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/clearpath_kinect</url>
+  <depend stack="ros" />
+  <depend stack="openni_kinect" />
+</stack>
