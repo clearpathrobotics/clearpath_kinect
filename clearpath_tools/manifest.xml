@@ -1,7 +1,7 @@
 <package>
   <description brief="clearpath_tools">
 
-     clearpath_tools
+     The clearpath_tools package provides a set of Point Cloud Tools used by many of the Clearpath Demos, some of which are simply wrappers for existing PCL tools.
 
   </description>
   <author>Sean Anderson</author>

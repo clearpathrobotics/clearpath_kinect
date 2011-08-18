@@ -1,7 +1,7 @@
 <package>
   <description brief="clearpath_kinect_demo">
 
-     clearpath_kinect_demo
+     The clearpath_kinect_demo package provides a set of basic demos that can be used with almost any robot and a Kinect. Launch files can be found in clearpath_husky and clearpath_turtlebot with robot specific parameters.
 
   </description>
   <author>Sean Anderson</author>
