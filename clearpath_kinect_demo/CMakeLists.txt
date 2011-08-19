@@ -30,8 +30,6 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 #target_link_libraries(example ${PROJECT_NAME})
 
 rosbuild_add_library(ClearpathDemoTools src/ClearpathDemoTools.cpp)
-target_link_libraries(ClearpathDemoTools Vector3)
-target_link_libraries(ClearpathDemoTools bestfit)
 
 rosbuild_add_executable(ClearpathDemoExplore src/ClearpathDemoExplore.cpp)
 target_link_libraries(ClearpathDemoExplore ClearpathDemoTools)

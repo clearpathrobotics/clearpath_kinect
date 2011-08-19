@@ -16,7 +16,7 @@
   <depend package="sensor_msgs"/>
 
   <export>
-    <cpp cflags="-I${prefix}/src" lflags="-L${prefix}/lib -lros"/>
+    <cpp cflags="-I${prefix}/src" lflags="-L${prefix}/lib -Wl,-rpath,${prefix}/lib -lVector3 -lbestfit -lClearpathPointCloudTools"/>
   </export>
 
 </package>

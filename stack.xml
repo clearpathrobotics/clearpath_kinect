@@ -1,10 +1,14 @@
 <stack>
-  <description brief="clearpath_kinect">This stack contains general-purpose software
-  for working with Clearpath Robotics platforms equipped with a Kinect sensor.</description>
+  <description brief="clearpath_kinect">
+    This stack contains general-purpose software for working with Clearpath Robotics platforms equipped with a Kinect sensor.
+  </description>
   <author>Maintained by Sean Anderson</author>
-  <license></license>  
+  <license>BSD</license>  
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/clearpath_kinect</url>
+  <depend stack="common_msgs" /> <!-- sensor_msgs -->
+  <depend stack="perception_pcl" /> <!-- pcl_ros -->
   <depend stack="ros" />
-  <depend stack="openni_kinect" />
+  <depend stack="ros_comm" /> <!-- std_msgs, roscpp -->
+
 </stack>
