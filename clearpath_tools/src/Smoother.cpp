@@ -27,7 +27,12 @@ void callback(const PointCloud::ConstPtr& msg)
     pcl::copyPointCloud(*msg, *temp);
 
     // Create a KD-Tree
+#if defined PCL_MAJOR_VERSION && defined PCL_MINOR_VERSION && PCL_MAJOR_VERSION == 1 && PCL_MINOR_VERSION >= 5
+    pcl::search::KdTree<PointType>::Ptr tree (new pcl::search::KdTree<PointType>);
+#else
+    // support for PCL version 1.1.1 in electric
     pcl::KdTree<PointType>::Ptr tree (new pcl::KdTreeFLANN<PointType>);
+#endif
     tree->setInputCloud (temp);
 
     // Output has the same type as the input one, it will be only smoothed
